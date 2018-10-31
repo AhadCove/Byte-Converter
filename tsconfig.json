@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+        "outDir": "dist/module",
+        "target": "es5",
+				"moduleResolution": "node",
+				"module": "es2015",
+				"declaration": true,
+				"declarationMap": true,
+    		"sourceMap": true,
+				"rootDir": "./src",
+				"importHelpers": true
+    },
+    "include": [
+			"src"
+    ],
+		"exclude": [
+			"node_modules",
+			"dist"
+    ]
+}

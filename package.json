@@ -1,0 +1,42 @@
+{
+  "name": "byte-converter",
+  "version": "0.0.1",
+  "description": "Convert digits and strings to bytes",
+  "author": "Ahad Cove  <ahadcove@gmail.com>",
+  "license": "Apache-2.0",
+  "main": "dist/commonjs",
+  "module": "dist/module",
+  "typings": "dist/module/index.d.ts",
+  "scripts": {
+    "test": "tap --coverage test/index.js",
+    "fix": "standard --fix",
+    "posttest": "standard",
+    "build:ts:module": "tsc --declaration",
+    "build:ts:commonjs": "tsc --outDir dist/commonjs --module commonjs --target es6",
+    "build": "rimraf dist && npm run build:ts:module && npm run build:ts:commonjs",
+    "prepublish": "npm run build",
+    "lint": "tslint --project tsconfig.json \"src/**/*.ts\"",
+    "lint:fix": "tslint --project tsconfig.json --fix \"src/**/*.ts\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AhadCove/Byte-Converter.git"
+  },
+  "keywords": [
+    "javascript",
+    "bytes",
+    "rgb",
+    "typescript"
+  ],
+  "bugs": {
+    "url": "https://github.com/AhadCove/Byte-Converter/issues"
+  },
+  "homepage": "https://github.com/AhadCove/Byte-Converter#readme",
+  "devDependencies": {
+    "nyc": "13.0.1",
+    "standard": "12.0.1",
+    "tap": "12.0.1",
+    "tslib": "1.9.3",
+    "typescript": "3.1.3"
+  }
+}
