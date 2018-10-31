@@ -1,5 +1,5 @@
-# Byte Converter
-Byte Converter is a utensil for bytes.
+# Byte Morph
+Byte Morph is a utensil for bytes.
 It can convert your boring old digits and string into beautify bytes 
 
 
@@ -12,7 +12,7 @@ Since Javascript doesn't have a built in way when dealing with bytes in some of 
 #### convertToBytes
 --------------
 ```js
-import convertToBytes from 'byte-converter';
+import convertToBytes from 'byte-morph';
 
 var digit = 5;
 convertToBytes(digit, 16); // 0x5
